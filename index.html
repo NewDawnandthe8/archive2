@@ -307,5 +307,26 @@
 
     // Run every 3 seconds
     setInterval(updateLiveStats, 3000);
-</script>
+<section style="margin-top: 4rem; border: 2px solid var(--neon-orange); padding: 1.5rem; background: #000;">
+    <h2 style="color: var(--neon-orange); margin-top: 0;">[ LIVE NETWORK FEED ]</h2>
+    <div style="display: flex; justify-content: space-around; text-align: center; flex-wrap: wrap;">
+        
+        <div>
+            <p style="color: var(--text-gray); margin-bottom: 5px;">ACTIVE CITIZENS</p>
+            <span id="citizen-count" style="font-size: 2rem; font-family: monospace; color: #fff;">1,042,380</span>
+        </div>
+
+        <div>
+            <p style="color: var(--text-gray); margin-bottom: 5px;">ATMOSPHERIC STABILITY</p>
+            <span id="stability-index" style="font-size: 2rem; font-family: monospace; color: #00ff00;">99.94%</span>
+        </div>
+
+        <div>
+            <p style="color: var(--text-gray); margin-bottom: 5px;">GLOBAL ENERGY SURPLUS</p>
+            <span style="font-size: 2rem; font-family: monospace; color: #fff;">+412%</span>
+        </div>
+
+    </div>
+</section>
+ </script>
 </html>
