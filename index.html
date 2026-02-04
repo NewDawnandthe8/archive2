@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NEW DAWN | The Open Archive</title>
+    <style>
+        :root {
+            --neon-orange: #ff8c00;
+            --deep-space: #0a0b10;
+            --text-gray: #a0a0b0;
+            --glow: 0 0 10px rgba(255, 140, 0, 0.5);
+        }
+
+        body {
+            background-color: var(--deep-space);
+            color: white;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            border-bottom: 1px solid var(--neon-orange);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--glow);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            letter-spacing: 5px;
+            font-weight: bold;
+            color: var(--neon-orange);
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .pillar-card {
+            border: 1px solid #333;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            transition: 0.3s;
+        }
+
+        .pillar-card:hover {
+            border-color: var(--neon-orange);
+            background: rgba(255, 140, 0, 0.05);
+            transform: translateY(-5px);
+        }
+
+        .pillar-number {
+            color: var(--neon-orange);
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        h2 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .terminal {
+            background: #000;
+            border-left: 3px solid var(--neon-orange);
+            padding: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 3rem 0;
+            font-size: 0.9rem;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+            color: var(--neon-orange);
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            font-size: 0.8rem;
+            color: #555;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">The New Dawn</div>
+    <div class="tagline">BORN IN LIGHT • SUSTAINED BY TRUTH • DRIVEN BY CHOICE</div>
+</header>
+
+<div class="container">
+    
+    <div class="terminal">
+        > ACCESSING OPEN ARCHIVE... <br>
+        > STATUS: PUBLIC BIRTHRIGHT ENABLED <br>
+        > ALL HISTORY VERIFIED. NO DOGMA DETECTED. <br>
+        > <span class="blink">_</span>
+    </div>
+
+    <section>
+        <h1 style="text-align: center;">The Eight Pillars</h1>
+        <div class="pillar-grid">
+            <div class="pillar-card">
+                <div class="pillar-number">PILLAR I</div>
+                <h2>Historical Integrity</h2>
+                <p>We never erase history; we learn from it to remain free. The past is a living document, open to all.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-number">PILLAR II</div>
+                <h2>Scientific Advancement</h2>
+                <p>Science is the engine of our progress. We evolve alongside evidence, leaving stagnation behind.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-number">PILLAR III</div>
+                <h2>Sovereign Belief</h2>
+                <p>Personal faith is a right, but it must never hinder human progress or the rights of the collective.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-number">PILLAR IV</div>
+                <h2>The End of the Elite</h2>
+                <p>Wealth is for the individual’s reward, never for the manipulation of the masses or the hoarding of power.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-number">PILLAR V</div>
+                <h2>Absolute Equality</h2>
+                <p>The hierarchy of the sexes and races is abolished. Biological traits carry no social rank.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-number">PILLAR VI</div>
+                <h2>Universal Sustenance</h2>
+                <p>Scarcity is dead. No human shall go hungry or unsheltered. Resource management is automated by AI.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-number">PILLAR VII</div>
+                <h2>Unlimited Education</h2>
+                <p>Knowledge is free to all, cleansing the mind of tribalism and securing a future of innovation.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-number">PILLAR VIII</div>
+                <h2>Environmental Mastery</h2>
+                <p>We steward the sky. Weather control ensures the bounty of the earth and the safety of every home.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    SYSTEM STATUS: STABLE | AI COMPLIANCE: 100% | PROTECT THE FUTURE
+</footer>
+
+</body>
+</html>
