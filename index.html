@@ -264,4 +264,26 @@
 </footer>
 
 </body>
+<script>
+    // This script simulates live data feeds from the New Dawn network
+    function updateLiveStats() {
+        // Update Citizen Count (Simulating growth)
+        const citizenElement = document.getElementById('citizen-count');
+        if(citizenElement) {
+            let currentCount = parseInt(citizenElement.innerText.replace(/,/g, ''));
+            currentCount += Math.floor(Math.random() * 5);
+            citizenElement.innerText = currentCount.toLocaleString();
+        }
+
+        // Update Atmospheric Stability
+        const stabilityElement = document.getElementById('stability-index');
+        if(stabilityElement) {
+            let stability = 99.8 + (Math.random() * 0.15);
+            stabilityElement.innerText = stability.toFixed(2) + "%";
+        }
+    }
+
+    // Run every 3 seconds
+    setInterval(updateLiveStats, 3000);
+</script>
 </html>
